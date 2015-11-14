@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>{% block title %} walkIt {% endblock %}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+
+</head>
+<body id="input">
+	<h1>{{ message }}</h1>
+	<form>
+		<p class="form-label">Going to:</p>
+		<input type="text" name="destination" value="" required>
+		<p class="form-option"><a href="#">round trip</a></p>
+		<p class="form-label">From:</p>
+		<input type="text" name="start" value="" required>
+		<p class="form-label">Walk for:</p>
+		<input type="number" name="duration"> <span class="form-unit">minutes</span>
+		<a href="routes.html"><input type="submit" value="Submit" class="button"></a>
+	</form>
+</body>
+</html>
