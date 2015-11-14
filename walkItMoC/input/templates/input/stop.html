@@ -1,0 +1,12 @@
+{% extends 'input/base.html' %}
+
+{% block content %}
+
+	<h1>{{ message }}</h1>
+
+	{% for arrival in arrivals %}
+	<p>
+		{{ arrival.lineName }} {{ arrival.expectedArrival }}
+	</p>
+	{% endfor %}
+{% endblock %}
