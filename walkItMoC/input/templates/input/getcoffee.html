@@ -1,0 +1,54 @@
+{% extends 'input/base.html' %}
+
+{% block content %}
+	<script>
+		$(document).ready(function(){
+		
+		$("iframe").toggle();
+
+	    $("button").click(function(){
+	        //$("iframe").css("width", "0");
+        	$("iframe").slideToggle();
+	    });
+	    $("button").click(function(){
+	        $("#test").toggle();
+	    });
+	});
+	</script>
+
+	<h1>{{ message }}</h1>
+	<div class="row">
+		<div class="col-xs-6">
+		    <button type="button" class="btn btn-info">
+    		  <span class="glyphicon glyphicon-ok"></span> {{ coffee_choice }}
+		    </button>
+		</div>
+
+		<div class="col-xs-6">
+		    <button type="button" class="btn btn-info">
+    		  <span class="glyphicon glyphicon-bitcoin"></span> {{ coffee_price }}
+		    </button>
+		</div>
+	</div>
+
+	<script type="text/javascript"
+	        src="https://www.simplify.com/commerce/simplify.pay.js"></script>
+	<iframe name="my-hosted-form"
+	        data-sc-key="sbpb_YTg5YjJhNWMtZGZlNC00ZTU5LThjOTItN2U3ZjMxNzEwZGYx"
+	        data-name="Nude Coffee"
+	        data-description="Smooth tea with a rich jasmine bouquet"
+	        data-reference="99999"
+	        data-amount="240"
+	        data-color="#12B830"
+	        width="330" height="390" frameborder="0" style="border:0" allowfullscreen>
+	</iframe>
+		
+	<div>
+	<a href="{% url 'stop' %}">Go back to arrivals</a>
+	</div>
+
+	{#<p id='test'>yay</p>#}
+
+
+
+{% endblock %}

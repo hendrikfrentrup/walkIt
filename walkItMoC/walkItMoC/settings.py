@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'), )
 print TEMPLATE_DIRS
 
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+print STATICFILES_DIRS
+
 # Application definition
 
 INSTALLED_APPS = (
