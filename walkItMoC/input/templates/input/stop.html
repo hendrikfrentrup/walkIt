@@ -4,6 +4,8 @@
 
 	<h1>{{ message }}</h1>
 
+	<h4>Live departures:</h4>
+
 	<div style='background-color:black; padding: 5px; border-radius: 7px'>
 		<ul>
 		{% for arrival in arrivals %}
@@ -18,11 +20,11 @@
 	</div>
 	
 	<div>
-	<a href="{% url 'coffee' %}">Get me a coffee!</a>
+	<a href="{% url 'coffee' %}">Get me a tomato juice!</a>
 	</div>
 	
 	<div>
-	<a href="{% url 'paper' %}">Get me a newspaper!</a>
+	<a href="{% url 'paper' %}">Get me ticket to 'Battle of Trafalgar'!</a>
 	</div>
 
 {% endblock %}

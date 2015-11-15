@@ -139,9 +139,9 @@ def paper(request):
 	print reverse('stop')
 	context = {
 		'links': reverse('stop'),
-		'paper_choice': 'FT',
-		'paper_price': '1.30',
-		'message': 'Get a paper at {}'.format('hermit'),
+		'paper_choice': 'Ticket',
+		'paper_price': '9.50',
+		'message': 'Get a ticket {}'.format('here'),
 		}
 	return render (request, 'input/getpaper.html', context)
 
@@ -149,10 +149,10 @@ def coffee(request):
 	print reverse('stop')
 	context = {
 		'links': reverse('stop'),
-		'coffee_choice': 'Nude',
+		'coffee_choice': 'Juice',
 		'coffee_price': '2.40',
 		'coffee_price_data': '250',
-		'message': 'Get an espresso at {}'.format('nude'),
+		'message': 'Get a tomato juice at {}'.format('Squiezer'),
 		}
 	return render (request, 'input/getcoffee.html', context)
 
