@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Walk it</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body id="input">
+	<nav id="nav" role="navigation">
+		<ul>
+			<li><a href="#"></a></li>
+			<!--
+			<li><a href="index.html">New journey</a></li>
+			<li><a href="routes.html">Routes</a></li>
+			-->
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+				<h1>Walk it!</h1>
+			<form>
+				<p class="form-label"><i class="fa fa-map-marker to"></i>Going to:</p>
+				<input type="text" name="destination" value="" required>
+				<p class="form-option"><a href="#"><i class="fa fa-refresh"></i>
+					round trip</a></p>
+				<p class="form-label"><i class="fa fa-map-marker from"></i>From:</p>
+				<input type="text" name="start" value="" required>
+				<p class="form-label"><i class="fa fa-clock-o"></i>I want to walk for (minutes):</p>
+				<input type="number" name="duration"> <span class="form-unit"></span>
+				<a href="routes.html"><input type="submit" value="Go" class="button"></a>
+			</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
